@@ -18,20 +18,25 @@ function About() {
           </div>
           {/* Content Section */}
           <div className="text-center">
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-              React development is carried out by passionate developers
-            </h2>
             <section>
-              <p className="mt-6 text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                omnis voluptatem accusantium nemo perspiciatis delectus atque
-                autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
-                consequatur! Officiis id consequatur atque doloremque!
+              <p className="mt-6 text-white">
+                My name is Mimoh Shukla, and I am currently pursuing a Bachelor
+                of Technology (B.Tech) in Computer Science while learning web
+                development technologies, including HTML and CSS for structuring
+                and styling web pages. I leverage JavaScript to create dynamic
+                and interactive user experiences. With React, I build responsive
+                and efficient user interfaces, utilizing its component-based
+                architecture to streamline development. I have also learned C++
+                and Operating Systems, which have enhanced my understanding of
+                programming and software development.
               </p>
-              <p className="mt-4 text-gray-600">
-                Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                iure expedita at? Asperiores nemo possimus nesciunt dicta veniam
-                aspernatur quam mollitia.
+              <p className="mt-4 text-white">
+                I use MongoDB and Express.js for backend development to create
+                robust and scalable applications. Tailwind CSS allows for rapid
+                UI design, while Postman is essential for API testing. My
+                workflow is enhanced by using VS Code as my primary code editor
+                and Git for version control, ensuring efficient collaboration
+                and code management on platforms like GitHub.
               </p>
             </section>
           </div>
