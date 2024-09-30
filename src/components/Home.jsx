@@ -4,6 +4,8 @@ import mylogo from "../assets/myLogo-Photoroom.png";
 import myPhoto from "../assets/image copy.png";
 import Typewriter from "./Typewriter"; // Import the Typewriter component
 import { Button, ButtonGroup } from "@nextui-org/button";
+// import { Link as NextUILink } from "@nextui-org/link";
+// import { AnchorIcon } from "./AnchorIcon";
 
 function Home() {
   return (
@@ -80,8 +82,50 @@ function Home() {
             </button> */}
             <Button
               radius="full"
-              className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
-              Button
+              className="bg-gradient-to-tr from-teal to-green-500 text-white shadow-lg">
+              Hire Me
+            </Button>
+            <Button radius="full" className="bg-dark text-white shadow-lg ml-4">
+              {" "}
+              {/* Added margin-left */}
+              Download Resume
+            </Button>
+          </div>
+          <div>
+            <Button
+              as="a"
+              href="https://www.linkedin.com/in/mimohshukla00/" // Replace with your LinkedIn URL
+              target="_blank" // Opens in a new tab
+              color="primary"
+              variant="bordered">
+              Linkdin
+            </Button>
+            <Button
+              as="a"
+              href="https://github.com/Mimohshukla00" // Replace with your LinkedIn URL
+              target="_blank" // Opens in a new tab
+              color="primary"
+              variant="bordered"
+              style={{ color: "red" }} >
+              Github
+            </Button>
+            <Button
+              as="a"
+              href="https://www.instagram.com/whomimohshukla/" // Replace with your LinkedIn URL
+              target="_blank" // Opens in a new tab
+              color="primary"
+              style={{ color: "pink" }} 
+              variant="bordered">
+              Instagram
+            </Button>
+            <Button
+              as="a"
+              href="https://leetcode.com/u/whomimohshukla/"
+              target="_blank"
+              color="primary"
+              style={{ color: "#F7D74D" }} // Set text color to yellow
+              variant="bordered">
+              LeetCode
             </Button>
           </div>
         </div>
@@ -92,8 +136,8 @@ function Home() {
           {/* Added mt-8 for spacing on smaller screens */}
           <img
             src={myPhoto}
-            style={{ width: "369px", height: "369px" }} // Square shape
-            alt="Priyansh"
+            style={{ width: "369px", height: "369px", userSelect: "none" }} // Square shape
+            alt="Mimoh"
           />
         </div>
       </div>
