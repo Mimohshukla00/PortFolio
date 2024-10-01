@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import AnimatedCursor from "react-animated-cursor";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 // import "./App.css";
 
 function App() {
@@ -41,8 +42,19 @@ function App() {
         ]}
       />
 
+      <Route path="/" element={<Layout></Layout>}>
+        <Route path="" element={<Home></Home>}></Route>
+        <Route path="about" element={<About></About>}></Route>
+        <Route path="contact" element={<Contact></Contact>}></Route>
+      </Route>
+
+
+
+      <Route
+
       <Home></Home>
       <About></About>
+      <Contact></Contact>
       <Footer></Footer>
     </>
   );
