@@ -50,7 +50,7 @@ function App() {
 
 
 
-      <Route
+      
 
       <Home></Home>
       <About></About>
