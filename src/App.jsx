@@ -4,18 +4,20 @@ import AnimatedCursor from "react-animated-cursor";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import { Route, Routes } from "react-router-dom";
+import Lyout from "./Lyout";
 // import "./App.css";
 
 function App() {
   return (
     <>
       <AnimatedCursor
-        innerSize={10} // Increased inner size for a larger inner ball
-        outerSize={20} // Increased outer size for a larger outer ball
-        color="193, 11, 111" // Your primary color
-        outerAlpha={0.2} // Adjusted outer opacity
-        innerScale={0.8} // Slightly larger inner ball scale
-        outerScale={6} // Slightly larger outer ball scale
+        innerSize={12} // Increased inner size for a larger inner ball
+        outerSize={30} // Increased outer size for a larger outer ball
+        color="255, 0, 150" // Changed to a bright pink color
+        outerAlpha={0.3} // Adjusted outer opacity for a more visible outer ball
+        innerScale={1} // Slightly larger inner ball scale
+        outerScale={8} // Increased outer ball scale for more impact
         clickables={[
           "a",
           'input[type="text"]',
@@ -31,12 +33,12 @@ function App() {
           {
             target: ".custom",
             options: {
-              innerSize: 14, // Increased inner size for custom target
-              outerSize: 14, // Increased outer size for custom target
-              color: "255, 255, 255", // Color for the custom target
-              outerAlpha: 0.3, // Custom target outer opacity
-              innerScale: 0.7, // Custom target inner scale
-              outerScale: 6, // Custom target outer scale
+              innerSize: 16, // Increased inner size for custom target
+              outerSize: 16, // Increased outer size for custom target
+              color: "255, 255, 255", // White color for the custom target
+              outerAlpha: 0.4, // Custom target outer opacity
+              innerScale: 0.9, // Increased inner scale for custom target
+              outerScale: 8, // Increased outer scale for custom target
             },
           },
         ]}
@@ -47,11 +49,9 @@ function App() {
         <Route path="about" element={<About></About>}></Route>
         <Route path="contact" element={<Contact></Contact>}></Route>
       </Route> */}
-
-
-
-      
-
+      <Routes>
+        <Route path="/" element={<Lyout></Lyout>}></Route>
+      </Routes>
       <Home></Home>
       <About></About>
       <Contact></Contact>
