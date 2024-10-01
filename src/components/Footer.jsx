@@ -12,15 +12,72 @@ function Footer() {
               <img src={mylogo} className="mr-3 h-16" alt="Logo" />
             </Link>
           </div>
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+                Resources
+              </h2>
+              <ul className="text-white font-medium">
+                <li className="mb-4">
+                  <Link to="/" className="hover:underline">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="hover:underline">
+                    About
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+                Follow us
+              </h2>
+              <ul className="text-white font-medium">
+                <li className="mb-4">
+                  <a
+                    href="https://github.com/Mimohshukla00"
+                    className="hover:underline"
+                    target="_blank"
+                    rel="noreferrer">
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <Link to="/" className="hover:underline">
+                    Discord
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+                Legal
+              </h2>
+              <ul className="text-white font-medium">
+                <li className="mb-4">
+                  <Link to="#" className="hover:underline">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#" className="hover:underline">
+                    Terms &amp; Conditions
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
-            © 2024
+          <span className="text-sm text-white sm:text-center">
+            © 2024-
             <a
               href="https://github.com/Mimohshukla00"
               className="hover:underline">
-              whomimohshukla
+               MimohShukla
             </a>
             . All Rights Reserved.
           </span>

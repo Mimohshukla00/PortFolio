@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
+import gmail from "../assets/image copy 6.png";
+import arrow from "../assets/designvector.png"
 
 export default function Contact() {
   return (
     <div className="relative flex items-top justify-center min-h-screen bg-teal sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
+        <div className="flex justify-evenly">
+          <img src={gmail} width={150} height={130} alt="" />          
+          <img src={arrow} width={150} height={150} alt="" />          
+
+        </div>
         <div className="mt-8 overflow-hidden rounded-lg shadow-lg bg-white">
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Left Contact Information Section */}
@@ -63,7 +70,7 @@ export default function Contact() {
             </div>
 
             {/* Right Contact Form Section */}
-            <form className="p-6 flex flex-col justify-center bg-white sm:rounded-lg shadow-md">
+            <form className="p-6 flex flex-col justify-center bg-gray-200 sm:rounded-lg shadow-md">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
                 Contact Form
               </h2>
