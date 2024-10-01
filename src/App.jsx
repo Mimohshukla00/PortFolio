@@ -42,11 +42,11 @@ function App() {
         ]}
       />
 
-      <Route path="/" element={<Layout></Layout>}>
+      {/* <Route path="/" element={<Layout></Layout>}>
         <Route path="" element={<Home></Home>}></Route>
         <Route path="about" element={<About></About>}></Route>
         <Route path="contact" element={<Contact></Contact>}></Route>
-      </Route>
+      </Route> */}
 
 
 
