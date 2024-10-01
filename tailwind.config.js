@@ -4,7 +4,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@nextui-org/theme/dist/components/(button|link|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(button|link|ripple|spinner).js",
   ],
   theme: {
     extend: {
@@ -13,6 +13,8 @@ export default {
         teal: "#0E6669",
         customBlue: "rgb(14 165 233)",
         dark: "#1E1E1E",
+        mycolo: "#053B48",
+        success: "#052814",
       },
     },
   },
