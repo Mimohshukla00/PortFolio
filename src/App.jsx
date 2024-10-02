@@ -5,7 +5,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { Route, Routes } from "react-router-dom";
-import Lyout from "./Lyout";
+// import Lyout from "./Lyout";
 // import "./App.css";
 
 function App() {
@@ -44,14 +44,6 @@ function App() {
         ]}
       />
 
-      {/* <Route path="/" element={<Layout></Layout>}>
-        <Route path="" element={<Home></Home>}></Route>
-        <Route path="about" element={<About></About>}></Route>
-        <Route path="contact" element={<Contact></Contact>}></Route>
-      </Route> */}
-      <Routes>
-        <Route path="/" element={<Lyout></Lyout>}></Route>
-      </Routes>
       <Home></Home>
       <About></About>
       <Contact></Contact>
