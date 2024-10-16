@@ -5,7 +5,7 @@ import resting from "../assets/restPhoto.png";
 
 function About() {
   return (
-    <div className="py-16 bg-customDark text-white border-none p-4">
+    <div className="py-16 bg-slate-800 roboto-slab-header text-white border-none p-4">
       <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6 flex justify-evenly flex-col md:flex-row items-center">
         <div className="space-y-6 flex flex-col w-full md:w-5/12">
           {/* Image Section */}

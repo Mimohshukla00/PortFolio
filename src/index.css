@@ -1,4 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@layer components {
+  .box {
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 0px; /* Change as needed */
+    height: 100px; /* Adjust height as needed */
+    width: 200px; /* Adjust width as needed */
+  }
+
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: -60px; /* Adjust inset to control the shadow spread */
+    background: #22a39f; /* Single color */
+    filter: blur(200px);
+    transform: translate3d(14px, 10px, -1px);
+    border-radius: inherit;
+    pointer-events: none;
+  }
+}
+/* Global styles for the scrollbar */
+
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Change the width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f20d0d; /* Change track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e80606; /* Change handle color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fb0c0c; /* Change handle color on hover */
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin; /* Options: auto, thin, or none */
+  scrollbar-color: #da2d2d #120101; /* Handle color and track color */
+}
+
+/* Unique and descriptive class name */
+/* Unique and descriptive class name */
+/* Unique and descriptive class name */
+.roboto-slab-custom {
+  font-family: "Roboto Slab", serif; /* Font family */
+  font-optical-sizing: auto; /* Optional property for font rendering */
+  font-weight: 400; /* Use a value from 100 to 900 */
+  font-style: normal; /* Normal style */
+}
+
+/* Class for Roboto Slab with a unique name and specific weight */
+/* Class for Roboto Slab with a unique name and specific weight */
+.roboto-slab-header {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Set to 700 for bold weight */
+  font-style: normal;
+}
+
+.roboto-slab-body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Set to 400 for regular weight */
+  font-style: normal;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
