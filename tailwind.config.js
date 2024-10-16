@@ -1,4 +1,4 @@
-const { nextui } = require("@nextui-org/theme");
+const { nextui, button } = require("@nextui-org/theme");
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,12 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        customDark: "#080C0C",
-        teal: "#0E6669",
+        // customDark: "#243642",
+        customDark: "#091020",
+        customDark2: "#091020",
+        teal: "#8E7AB5",
         customBlue: "rgb(14 165 233)",
         dark: "#1E1E1E",
         mycolo: "#053B48",
         success: "#052814",
+        "custom-red": "#E55604",
+        button: "#DC5F00",
       },
     },
   },
