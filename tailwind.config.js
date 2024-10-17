@@ -19,6 +19,7 @@ export default {
         success: "#052814",
         "custom-red": "#E55604",
         button: "#DC5F00",
+        "home":"#0a1020"
       },
     },
   },

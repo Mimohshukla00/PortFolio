@@ -18,7 +18,7 @@
     content: "";
     position: absolute;
     inset: -60px; /* Adjust inset to control the shadow spread */
-    background: #22a39f; /* Single color */
+    background: #a37822; /* Single color */
     filter: blur(200px);
     transform: translate3d(14px, 10px, -1px);
     border-radius: inherit;
